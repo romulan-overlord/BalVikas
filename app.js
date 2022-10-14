@@ -10,6 +10,10 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/signin.html");
 });
 
-app.listen(3000, function(err){
+app.get("/signup", function(req, res){
+    res.sendFile(__dirname + "/signup.html");
+});
+
+app.listen(3030, function(err){
     console.log("server up!");
 });

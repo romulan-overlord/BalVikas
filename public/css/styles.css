@@ -3,50 +3,77 @@ html{
 }
 
 body{
-    min-height: 100%;
-    background-image: -webkit-linear-gradient(65deg, #B1AFFF 50%, #B8E8FC 50%);
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
 .title{
-    color: white;
-    margin: 50px;
-}
-
-.title form{
-    position: absolute;
-    right: 5%;
-    top: 5%;
+    background-color: #B1AFFF;
+    padding: 20px;
 }
 
 .text{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Sacramento', cursive;
     font-weight: lighter;
     text-align: center;
 }
 
+.sign-up{
+    display: inline;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color:#96f2aa;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: 0.5s;
+    float: right !important;
+    /* position: absolute;
+    top: 50%;
+    right: 5%; */
+    
+}
+
+.sign-up:hover{
+    background-color: #8ae59e;
+    padding: 12px;
+}
+
 h1{
-    font-size: 4rem;
+    font-size: 2.5rem;
+    display: inline;
+    color: white;
+    font-family: 'Cinzel', serif;
 }
 
 h2{
-    font-size: 55px;
+    font-size: 35px;
+    color: black;
+    font-family: 'Sacramento', cursive;
+}
+
+.content{
+    background-image: -webkit-linear-gradient(65deg, #B8E8FC 50%, #C8FFD4 50%);
+    height: 100%;
+    padding-top: 100px;
 }
 
 .form-container form{
     display: inline-block;
     width: 100%;
+    font-weight: normal;
 }
 
 .form-container{
     margin: auto;
-    max-width: 20%;
-    height: 50%;
+    max-width: 45%;
     text-align: center;
     padding: 25px;
     background-color: #FDFDBD;
