@@ -10,9 +10,13 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/signin.html");
 });
 
-app.post("/", function(req, res){
+app.get("/home", function(req, res){
+    res.sendFile(__dirname + "/home.html");
+});
+
+app.post("/home", function(req, res){
     console.log(req.body);
-    res.send("Your data has been received successfully.");
+    res.sendFile(__dirname + "/home.html");
 });
 
 app.get("/signup", function(req, res){
@@ -21,7 +25,7 @@ app.get("/signup", function(req, res){
 
 app.post("/signup", function(req, res){
     console.log(req.body);
-    res.send("Congratulations, new account made.");
+    res.redirect("/home");
 });
 
 app.listen(3030, function(err){
