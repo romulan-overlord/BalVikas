@@ -16,15 +16,17 @@
 <body>
     <div class="title">
         <h1 class="text">BalVikasGuru</h1>
-        <a class="sign-up" href="/signup">Sign Up</a>
+        <a class="sign-up" href="/">Sign In</a>
     </div>
     <div class="content">
         <div class="form-container">
-            <h2 class="text">Welcome Back!</h2>
-            <form>
-                <input class="uid" type="text" name="userID" placeholder="Username"><br>
-                <input class="pwd" type="password" name="password" placeholder="Password"><br>
-                <button class="btn" type="submit">Sign In</button>
+            <h2 class="text">Hello there!</h2>
+            <form action="/signup" method="post">
+                <input class="uid" type="text" name="name" placeholder="Name"><br>
+                <input class="mid" type="text" name="userID" placeholder="Username"><br>
+                <input class="mid" type="password" name="password" placeholder="Password"><br>
+                <input class="pwd" type="password" name="confirmPassword" placeholder="Confirm Password"><br>
+                <button class="btn" type="submit">Sign Up</button>
             </form>
         </div>
     </div>
