@@ -11,23 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Sign Up</title>
+    <title>Home</title>
 </head>
 <body>
     <div class="title">
         <h1 class="text">BalVikasGuru</h1>
-        <a class="sign-up" href="/">Sign In</a>
+        <a class="sign-up" href="/compose">Compose</a>
+        <a class="sign-up" href="/home">Home</a>
     </div>
     <div class="content">
-        <div class="form-container">
-            <h2 class="text">Hello there!</h2>
-            <form action="/signup" method="post">
-                <input class="uid" type="text" name="name" placeholder="Name"><br>
-                <input class="mid" type="text" name="userID" placeholder="Username"><br>
-                <input class="mid" type="password" name="password" placeholder="Password"><br>
-                <input class="pwd" type="password" name="confirmPassword" placeholder="Confirm Password"><br>
-                <button class="btn" type="submit">Sign Up</button>
-            </form>
+        <div class="entries-container">
+            <ul class="entry-list">
+                <% for(let i=0; i<entries.length; i++){ %>
+                    <li>
+                        <h3><%= entries[i].title %></h3>
+                        <p><%= entries[i].content %><a>... read more</a></p>
+                    </li>
+                <% } %>
+            </ul>
         </div>
     </div>
 </body>
